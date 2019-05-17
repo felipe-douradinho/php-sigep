@@ -8,6 +8,9 @@ namespace PhpSigep\Model;
  */
 class ServicoDePostagem extends AbstractModel
 {
+	const SERVICE_PAC = '41106';
+	const SERVICE_SEDEX = '40010';
+	
     const SERVICE_PAC_41068 = '41068';
     const SERVICE_PAC_04510 = '04510';
     const SERVICE_PAC_GRANDES_FORMATOS = '41300';
@@ -57,6 +60,9 @@ class ServicoDePostagem extends AbstractModel
 
     protected static $services
         = array(
+		    self::SERVICE_PAC       => array('Pac 41106', 109819),
+		    self::SERVICE_SEDEX     => array('Sedex 40010', 121877),
+        	
             self::SERVICE_PAC_41068                                  => array('Pac 41068', 109819),
             self::SERVICE_PAC_04510                                  => array('Pac 04510', 124887),
             self::SERVICE_PAC_GRANDES_FORMATOS                       => array('Pac Grandes Formatos', 120366),
