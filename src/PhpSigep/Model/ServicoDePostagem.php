@@ -60,8 +60,8 @@ class ServicoDePostagem extends AbstractModel
 
     protected static $services
         = array(
-		    self::SERVICE_PAC       => array('Pac 41106', 109819),
-		    self::SERVICE_SEDEX     => array('Sedex 40010', 121877),
+		    self::SERVICE_PAC       => array('Pac', 109819),
+		    self::SERVICE_SEDEX     => array('Sedex', 121877),
         	
             self::SERVICE_PAC_41068                                  => array('Pac 41068', 109819),
             self::SERVICE_PAC_04510                                  => array('Pac 04510', 124887),
